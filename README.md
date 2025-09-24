@@ -1,6 +1,6 @@
 # Student t option pricing
-Option pricing when the terminal stock price follows a normal or Student t distribution. Run with
-`python xdof_option.py`.
+Simulates option pricing when the terminal stock price follows a normal or Student t distribution rather than the usual lognormal. The distribution of stock market simple returns, 
+`S(t)/S(t-k) - 1`, from 1 day through at least 3 months is closer to Student t than lognormal empirically, because it does not have positive skew and has excess kurtosis. This may explain the implied volatility smile (varying implied volatility by strike) when the Black-Scholes model is used. The Student t distribution approaches the normal for large df. Run with `python xdof_option.py`.
 
 ![Alt text](/smile.png)
 
